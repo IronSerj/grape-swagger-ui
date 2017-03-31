@@ -22,7 +22,7 @@ html xmlns="http://www.w3.org/1999/xhtml" lang=I18n.locale.to_s xml:lang=(I18n.l
         if (url && url.length > 1) {
           url = decodeURIComponent(url[1]);
         } else {
-          url = "#{request.protocol}#{request.host}:#{request.port}/api/v1/swagger_doc";
+          url = "#{request.protocol}#{request.host}:#{request.port}/swagger_doc";
         }
 
         hljs.configure({
@@ -91,6 +91,6 @@ html xmlns="http://www.w3.org/1999/xhtml" lang=I18n.locale.to_s xml:lang=(I18n.l
           #auth_container
           .input
             a#explore.header__btn data-sw-translate="" href="#"  Explore
-            
+
     #message-bar.swagger-ui-wrap data-sw-translate=""  &nbsp;
     #swagger-ui-container.swagger-ui-wrap
