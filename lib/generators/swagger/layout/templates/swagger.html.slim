@@ -22,7 +22,7 @@ html xmlns="http://www.w3.org/1999/xhtml" lang=I18n.locale.to_s xml:lang=(I18n.l
         if (url && url.length > 1) {
           url = decodeURIComponent(url[1]);
         } else {
-          url = "#{request.protocol}#{request.host}:#{request.port}/swagger_doc";
+          url = "#{request.protocol}#{request.host}:#{request.port}/v1/swagger_doc";
         }
 
         hljs.configure({
